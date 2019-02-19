@@ -57,6 +57,7 @@ func init() {
 	// viper.BindPFlag("bindPW", rootCmd.PersistentFlags().Lookup("bindPW"))
 	// viper.BindPFlag("interval", rootCmd.PersistentFlags().Lookup("interval"))
 
+	rootCmd.MarkPersistentFlagRequired("config")
 }
 
 // initConfig reads in the config file and ENV variables if set.
